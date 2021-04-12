@@ -76,8 +76,4 @@ function save(notesArray) {
     ul.insertAdjacentHTML('beforeend', `<li> ${noteTitle}</li>`)
 }
 
-ul.addEventListener ('click', (e) => {
-    const targetNote = notesArray.find(n => n["id"] == e.target.innerText)
-    notearea.value = targetNote["noteTitle"];
-})
 
