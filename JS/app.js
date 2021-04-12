@@ -15,7 +15,7 @@ function darkMode() {
     let save = document.querySelector("#save");
     let side = document.querySelector(".side");
     let main = document.querySelector(".main");
-    let remove = document.querySelector("#remove");
+    let cancel = document.querySelector("#cancel");
     let dark = document.querySelector("#dark");
     let footer = document.querySelector("footer");
     if (dark.innerHTML == "Dark Mode") {
@@ -25,7 +25,7 @@ function darkMode() {
         save.style.backgroundColor = "#232136";
         side.style.backgroundColor = "#393552";
         main.style.backgroundColor = "#59546d";
-        remove.style.backgroundColor = "#2a273f";
+        cancel.style.backgroundColor = "#2a273f";
         footer.style.backgroundColor = "#232136";
     }
     else {
@@ -35,7 +35,7 @@ function darkMode() {
         save.style.backgroundColor = "#575279";
         side.style.backgroundColor = "#9893a5";
         main.style.backgroundColor = "#f2e9de";
-        remove.style.backgroundColor = "#6e6a86";
+        cancel.style.backgroundColor = "#6e6a86";
         footer.style.backgroundColor = "#575279";
     }
 }
@@ -45,7 +45,7 @@ let notesArray = [
     {noteTitle: note_two, text: "Lorem Ipsum"},
   ];
 
-function remove() {
+function cancel() {
     let notes = document.querySelector("#text-area");
     let noteButtons = document.querySelector(".notebuttons");
     if (noteButtons.style.display == "show" || noteButtons.style.display == "") {
