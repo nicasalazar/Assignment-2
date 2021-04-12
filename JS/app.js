@@ -72,8 +72,8 @@ function save(notesArray) {
     noteTitle = notes.value.split("\n")[0];
     text= noteArea.value.split("\n").splice(1,listLength);
     newList = {noteTitle: `${noteTitle}`, text: `${text}`};
-    notesArray.push(newListt);
-    ul.insertAdjacentHTML('beforeend', `<li> ${noteTitle}</li>`)
+    notesArray.push(newList);
+    document.querySelector('ul').insertAdjacentHTML('beforeend', '<li>noteTitle</li>')
 }
 
 
