@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./CSS/styles.css" rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Epilogue:wght@500&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav class="header">
+                    <ul class="top">
+                        <button type="button" onclick="darkMode();" id="dark">Dark Mode</button>
+                        <li id="links">About</li>
+                        <li id="links">Docs</li>
+                        </button>
+                    </ul>
+                </nav>
+            </header>
+            <nav class="side">
+                <button class="openbtn" onclick="openNav()">&#9776; My Notes</button>
+                <div id="sidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+                    <li id="note-1">note one</li>
+                    <li id="note-2">note two</li>
+                </div>
+            </nav>
+            <div class="main">
+                <div class="note-area">
+                    <button type="note_button" onclick="newNote();" id="new">+</button>
+                <textarea id="text-area" name="note"> Your note here</textarea>
+                <div class="notebuttons">
+                    <button type="button" onclick="save();" id="save">Save</button>
+                    <button type="button" onclick="remove();" id="remove">Delete</button>
+                </div>
+                </div>
+        </div>
+            <footer> 
+                    <p>created by Dannicah Salazar</p>
+            </footer>
+            <script src="./JS/app.js"></script>
+    </body>
+</html>
