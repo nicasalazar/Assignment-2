@@ -41,8 +41,8 @@ function darkMode() {
 }
 
 let notesArray = [
-    {noteTitle: note_one, text: "Lorem Ipsum"},
-    {noteTitle: note_two, text: "Lorem Ipsum"},
+    {title: note_one, body: "Lorem Ipsum"},
+    {title: note_two, body: "Lorem Ipsum"},
   ];
 
 function cancel() {
@@ -69,11 +69,11 @@ function newNote() {
 
 function save(notesArray) {
     listLength = notes.value.split("\n").length;
-    noteTitle = notes.value.split("\n")[0];
-    text= noteArea.value.split("\n").splice(1,listLength);
-    newList = {noteTitle: `${noteTitle}`, text: `${text}`};
+    title = notes.value.split("\n")[0];
+    body= noteArea.value.split("\n").splice(1,listLength);
+    newList = {title: `${title}`, body: `${body}`};
     notesArray.push(newList);
-    document.querySelector('ul').insertAdjacentHTML('beforeend', '<li>noteTitle</li>')
+    document.querySelector('ul').insertAdjacentHTML('beforeend', '<li>title</li>')
 }
 
 
